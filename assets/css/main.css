@@ -1,0 +1,149 @@
+html, body {
+  font-family: "Open Sans" monospace;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  text-align: center;
+}
+
+#nav-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgb(21, 29, 83);
+}
+
+#header-img {
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
+}
+
+#nav-bar a:hover {
+  background-color: rgb(26, 43, 158);
+}
+
+#link_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#link_container a {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  height: 20px;
+  padding: 20px 30px;
+  color: rgb(235, 235, 235);
+}
+
+#link_container a:hover {
+  background-color: rgb(26, 43, 158);
+}
+
+#title {
+  font-size: 3em;
+  padding-top: 60px;
+}
+
+#description {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#description_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.desc_col {
+  margin: 0 20px;
+  flex: 1 1 0px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+#video {
+  max-width: 560px;
+  height: 315px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#form_container {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#form {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 20px;
+  color: rgb(223, 223, 223);
+  background-color: rgb(21, 29, 83);
+  text-align: center;
+}
+
+footer a {
+  color: rgb(254, 254, 254);
+}
+
+@media (max-width: 750px) {
+  #nav-bar{
+    height: 185px;
+    flex-direction: column;
+  }
+
+  #link_container {
+    flex-direction: column;
+  }
+
+  #link_container a {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  #description_container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #title {
+    padding-top: 185px;
+  }
+}
